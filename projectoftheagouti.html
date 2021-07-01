@@ -44,7 +44,9 @@
                 return array_name;
                 };
     
-
+function loadpoem() {
+  setTimeout(loadpoem, 15000);
+  
     questiona = '\"' + randomizer(interrogative) + ' does the ' + randomizer(noun2) + ' ' + randomizer(verb);
     questionb = '\"' + randomizer(interrogative2) + ' is the ' + randomizer(noun1) + ' of the ' + randomizer(noun2);
 
@@ -74,8 +76,9 @@
             document.getElementById('line5').innerText = answerselection
             },7000)
                 
+}
                 
-                
+   loadpoem();             
         </script>
 
         </body></html>
